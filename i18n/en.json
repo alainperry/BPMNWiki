@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alain PERRY"
+		]
+	},
+	"bpmnwiki": "BPMNWiki",
+	"bpmnwiki-desc": "Adds the ability to display and edit BPMN diagrams.",
+	"bpmnwiki-summary": "This extension allows editors of the wiki to embed BPMN XML into articles so that it'll be displayed as a BPMN diagram. It will also enable the user to create or edit pages for tasks, events and gateways of said diagrams.",
+  "bpmneditor": "BPMN Editor"
+}

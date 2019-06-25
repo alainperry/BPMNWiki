@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'bpmnwiki';
+  src: url('bpmnwiki.eot?11399341');
+  src: url('bpmnwiki.eot?11399341#iefix') format('embedded-opentype'),
+       url('bpmnwiki.woff2?11399341') format('woff2'),
+       url('bpmnwiki.woff?11399341') format('woff'),
+       url('bpmnwiki.ttf?11399341') format('truetype'),
+       url('bpmnwiki.svg?11399341#bpmnwiki') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'bpmnwiki';
+    src: url('../font/bpmnwiki.svg?11399341#bpmnwiki') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-bpmnwiki-"]:before, [class*=" icon-bpmnwiki-"]:before {
+  font-family: "bpmnwiki";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-bpmnwiki-wikipedia:before { content: '\e800'; } /* '' */
+.icon-bpmnwiki-plus:before { content: '\e801'; } /* '' */
+.icon-bpmnwiki-minus:before { content: '\e802'; } /* '' */
+.icon-bpmnwiki-edit:before { content: '\e803'; } /* '' */
+.icon-bpmnwiki-fullscreen:before { content: '\e804'; } /* '' */
+.icon-bpmnwiki-open:before { content: '\e805'; } /* '' */
+.icon-bpmnwiki-plus-circled:before { content: '\e806'; } /* '' */
+.icon-bpmnwiki-download:before { content: '\e807'; } /* '' */
+.icon-bpmnwiki-icon-workflow:before { content: '\e808'; } /* '' */
+.icon-bpmnwiki-resize:before { content: '\f0b2'; } /* '' */
+.icon-bpmnwiki-save:before { content: '\f0ee'; } /* '' */
+.icon-bpmnwiki-keyboard:before { content: '\f11c'; } /* '' */
+.icon-bpmnwiki-file-image:before { content: '\f1c5'; } /* '' */

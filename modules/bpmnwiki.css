@@ -1,0 +1,95 @@
+/*
+.page-missing:not(.djs-connection) .djs-visual > :nth-child(1) {
+  fill: salmon !important;
+}
+*/
+
+.page-exists:not(.djs-connection) .djs-visual > :nth-child(1) {
+  fill: lightgreen !important;
+}
+
+.bpmnwiki-control-list {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+}
+
+.bpmnwiki-control-list a,
+.bpmnwiki-control-list a:visited,
+.bpmnwiki-control-list button {
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 26px;
+  color: #555555;
+  background: none;
+  border: none;
+}
+.bpmnwiki-control-list a:hover,
+.bpmnwiki-control-list a:visited:hover,
+.bpmnwiki-control-list button:hover {
+  color: #333333;
+}
+.bpmnwiki-control-list a.inactive,
+.bpmnwiki-control-list a:visited.inactive,
+.bpmnwiki-control-list button.inactive {
+  color: #E0E0E0;
+  cursor: default;
+}
+.bpmnwiki-control-list.bpmnwiki-horizontal,
+.bpmnwiki-control-list.bpmnwiki-horizontal li {
+  display: inline-block;
+}
+.bpmnwiki-control-list.bpmnwiki-horizontal a {
+  padding: 2px;
+  margin: 0 5px;
+}
+.bpmnwiki-control-list.bpmnwiki-horizontal button {
+  margin: 0 5px;
+}
+.bpmnwiki-edit {
+  width: auto;
+  position: absolute;
+  right: 50px;
+  top: 10px;
+  display: inline-block;
+  z-index: 100;
+  opacity: 0.7;
+}
+.bpmnwiki-edit:hover {
+  opacity: 1;
+}
+.bpmnwiki-edit .bpmnwiki-control {
+  margin-left: 10px;
+}
+.bpmnwiki-edit .bpmnwiki-control button {
+  margin: 0;
+}
+.bpmnwiki-control {
+  background: #FFF;
+  border-radius: 2px;
+  border: solid 1px #E0E0E0;
+  padding: 5px;
+}
+
+a.tool[title="BPMN"] {
+  font-family: "bpmnwiki";
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  text-indent: 0;
+}
+a.tool[title="BPMN"]:before {
+  content: '\e808';
+  font-variant: normal;
+  text-transform: none;
+  margin-right: .2em;
+  margin-left: .2em;
+  width: 1em;
+  display: inline-block;
+  color: black;
+  font-size: 120%;
+  text-align: center;
+  line-height: 1em;
+}

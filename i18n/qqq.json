@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alain PERRY"
+		]
+	},
+	"bpmnwiki": "The name of the extension's entry in Special:SpecialPages",
+	"bpmnwiki-desc": "{{desc}}",
+	"bpmnwiki-summary": "Description appearing on top of Special:MyExtension."
+}

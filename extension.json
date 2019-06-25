@@ -1,0 +1,84 @@
+{
+  "name": "BPMNWiki",
+  "author": "Alain Perry",
+  "url": "",
+  "description": "This extension provides a viewer for BPMN files, and allows to create/edit pages based on their elements/shapes (e.g. for each task)",
+  "version": "0.0.5",
+  "license-name": "WTFPL",
+  "type": "media",
+  "ResourceModules": {
+    "ext.BPMNWiki": {
+      "position": "bottom",
+      "scripts": [
+        "bpmn-navigated-viewer.development.js",
+        "bpmn-display.js"
+      ],
+      "styles": [
+        "diagram-js.css",
+        "bpmnwiki.css",
+        "fonts/bpmnwiki.css"
+      ]
+    },
+    "ext.BPMNWikiSpecial": {
+      "position": "bottom",
+      "scripts": [
+        "hat.js",
+        "ids.js",
+        "downloadjs.js",
+        "bpmn-modeler.development.js",
+        "bpmn-editor.js"
+      ],
+      "styles": [
+        "bpmn-editor.css",
+        "fonts/bpmn.css",
+        "fonts/bpmnwiki.css"
+      ]
+    },
+    "ext.BPMNWiki.WikiEditorToolbar": {
+      "position": "bottom",
+      "scripts": [
+        "WikiEditorToolbar"
+      ],
+      "styles": [
+        "bpmnwiki.css",
+        "fonts/bpmnwiki.css"
+      ]
+    }
+  },
+  "ResourceFileModulePaths": {
+    "localBasePath": "modules",
+    "remoteExtPath": "BPMNWiki/modules"
+  },
+  "MediaHandlers": {
+    "application/bpmn+xml": "BPMNHandler"
+  },
+  "Hooks": {
+    "ParserFirstCallInit": "BPMNHandler::onParserFirstCallInit",
+		"BeforePageDisplay": "BPMNHandler::onBeforePageDisplay"
+  },
+  "AutoloadClasses": {
+    "BPMNHandler": "BPMN_handler.php",
+    "SpecialBPMNEditor": "SpecialBPMNEditor.php"
+  },
+  "namespaces": [
+    {
+      "id": 2200,
+      "constant": "NS_BPMN",
+      "name": "BPMN"
+    },
+    {
+      "id": 2201,
+      "constant": "NS_BPMN_TALK",
+      "name": "BPMN_talk"
+    }
+  ],
+  "MessagesDirs": {
+		"BPMNWiki": [
+			"i18n"
+		]
+	},
+	"SpecialPages": {
+		"BPMNEditor": "SpecialBPMNEditor"
+	},
+  "manifest_version": 1
+}
