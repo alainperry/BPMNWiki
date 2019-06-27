@@ -37,7 +37,7 @@
     "ext.BPMNWiki.WikiEditorToolbar": {
       "position": "bottom",
       "scripts": [
-        "WikiEditorToolbar"
+        "WikiEditorToolbar.js"
       ],
       "styles": [
         "bpmnwiki.css",
