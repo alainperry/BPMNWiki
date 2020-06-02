@@ -46,7 +46,7 @@
       // Get path to "index.php" from server root
       $url = $services->getMainConfig()->get('Script');
       // Get path to the BPMNEditor Special Page
-      $url = $url .'/'. $services->getSpecialPageFactory()->getPage('BPMNEditor')->getTitle();
+      $url = $url .'/'. $services->getSpecialPageFactory()->getPage('BPMNEditor')->getPageTitle();
       // Add the reference to the current page so the BPMNEditor knows what to load
       $url = $url .'/'. $parser->getTitle()->getNsText() .':'. rawurlencode($parser->getTitle()->getText());
 			
