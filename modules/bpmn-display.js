@@ -16,7 +16,7 @@ var eventBus = bpmnViewer.get('eventBus');
 var elementRegistry = bpmnViewer.get('elementRegistry');
 
 /**
- * Open diagram in our viewer instance.
+ * Open diagram in a viewer instance.
  *
  * @param {String} bpmnXML diagram to display
  */
@@ -27,7 +27,7 @@ function openDiagram(bpmnXML) {
       return console.error('could not import BPMN 2.0 diagram', err);
     }
     // zoom to fit full viewport
-    canvas.zoom('fit-viewport');
+    canvas.zoom('fit-viewport', 'auto');
   });
 }
 
