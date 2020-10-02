@@ -86,7 +86,7 @@ eventBus.on('import.done', function (e) {
       console.dir(e.element.businessObject);
     // If the clicked element has been marked (via CSS) as having a page, just add its label to the current URL and load that
     if (canvas.hasMarker(e.element, 'page-exists')) {
-      window.location.href = window.location.href +'/'+ e.element.businessObject.name;
+      window.location.href = window.location.href +'/'+ e.element.businessObject.name.replace(/\?$/, '%3f');
     } else { // If it's been marked as missing, redirect to the adequate Page:Forms form for creating that page
       var form;
       var type = e.element.businessObject.$type;
@@ -105,7 +105,7 @@ eventBus.on('import.done', function (e) {
         url += mw.config.get('wgScript'); // full path to index.php
         url += '/Special:FormEdit'; // path to the FormEdit special page
         url += '/'+ form; // name of the form to use for page creation
-        url += '/'+ encodeURIComponent(pageName); // first part of the name of the page to be created, equals to the current page's name
+        url += '/'+ encodeURIComponent(pageName).replace('%2F', '/'); // first part of the name of the page to be created, equals to the current page's name
         url += '/'+ encodeURIComponent(e.element.businessObject.name); // second part of the name of the page to be created, based on the clicked component's label
         url += '?'+ form +'[Processus]='+ pageName; // query string used to pre-fill the "process" field based on the current page's title
         window.location.href = url; // let's go !
