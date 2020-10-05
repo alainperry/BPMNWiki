@@ -31,6 +31,13 @@ function openDiagram(bpmnXML) {
   });
 }
 
+// Overwrite scroll function of canvas
+Canvas.__proto__.scroll = function(delta) {
+  var matrix = this._viewport.getCTM();
+  window.scrollBy(-delta.dx, -delta.dy);
+  return { x: matric.e, y: matrix.f };
+}
+
 // Do open
 openDiagram(diagramXml);
 
