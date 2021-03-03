@@ -654,11 +654,11 @@ function saveWiki() {
             watchlist: 'nochange',
             contentmodel: 'wikitext',
             format: 'json',
-            token: mw.user.tokens.get('editToken')
+            token: mw.user.tokens.get('csrfToken')
           },
           type: 'POST',
           success: function(data) {
-            if (data.edit.result == 'Success') {
+            if (data.edit && data.edit.result == 'Success') {
               alert('Diagram saved in '+ pageTitle +' article.');
             } else {
               console.error(data);

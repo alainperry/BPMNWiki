@@ -35,7 +35,7 @@ function openDiagram(bpmnXML) {
 canvas.__proto__.scroll = function(delta) {
   var matrix = this._viewport.getCTM();
   window.scrollBy(-delta.dx, -delta.dy);
-  return { x: matric.e, y: matrix.f };
+  return { x: matrix.e, y: matrix.f };
 }
 
 // Do open
