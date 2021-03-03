@@ -54,7 +54,7 @@
   },
   "Hooks": {
     "ParserFirstCallInit": "BPMNHandler::onParserFirstCallInit",
-		"BeforePageDisplay": "BPMNHandler::onBeforePageDisplay"
+	"BeforePageDisplay": "BPMNHandler::onBeforePageDisplay"
   },
   "AutoloadClasses": {
     "BPMNHandler": "BPMN_handler.php",
@@ -64,12 +64,12 @@
     {
       "id": 2200,
       "constant": "NS_BPMN",
-      "name": "BPMN"
+      "name": "Process"
     },
     {
       "id": 2201,
       "constant": "NS_BPMN_TALK",
-      "name": "BPMN_talk"
+      "name": "Process_talk"
     }
   ],
   "MessagesDirs": {
